@@ -1,7 +1,7 @@
 {
   "home": "Home",
   "portfolio": "Portfolio",
-  "about": "About",
+  "clients": "Clients",
   "contact": "Contact",
   "legal": "Legal Notice",
 
@@ -10,5 +10,8 @@
 
   "footerDescription": "Video Editor specialized in Highlights",
   "developedBy": "Developed by Zenthor",
-  "rights": "© 2025 Ryze — All Rights Reserved"
+  "rights": "© 2025 Ryze — All Rights Reserved",
+
+  "clientsEditingTitle": "Video Editing Clients",
+  "youtubeManagerTitle": "YouTube Manager Clients"
 }

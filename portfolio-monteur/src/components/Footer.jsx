@@ -19,8 +19,7 @@ function Footer() {
         <div className="footer-links">
           <Link to="/">{t("home")}</Link>
           <Link to="/portfolio">{t("portfolio")}</Link>
-          <Link to="/about">{t("about")}</Link>
-          <Link to="/contact">{t("contact")}</Link>
+          <Link to="/clients">{t("clients")}</Link>
           <Link to="/legal">{t("legal")}</Link>
         </div>
 

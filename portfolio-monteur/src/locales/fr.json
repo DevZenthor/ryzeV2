@@ -1,7 +1,7 @@
 {
   "home": "Accueil",
   "portfolio": "Portfolio",
-  "about": "À propos",
+  "clients": "Clients",
   "contact": "Contact",
   "legal": "Mentions légales",
 
@@ -10,5 +10,8 @@
 
   "footerDescription": "Monteur Vidéo spécialisé en Highlights",
   "developedBy": "Développé par Zenthor",
-  "rights": "© 2025 Ryze — Tous droits réservés"
+  "rights": "© 2025 Ryze — Tous droits réservés",
+
+  "clientsEditingTitle": "Clients Montage Vidéo",
+  "youtubeManagerTitle": "Clients YouTube Manager"
 }

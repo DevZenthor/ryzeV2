@@ -33,18 +33,29 @@ function CustomNavbar() {
           <Nav className="ms-auto align-items-center nav-links-group">
             <Nav.Link href="/">{t("home")}</Nav.Link>
             <Nav.Link href="/portfolio">{t("portfolio")}</Nav.Link>
-            <Nav.Link href="/about">{t("about")}</Nav.Link>
-            <Nav.Link href="/contact">{t("contact")}</Nav.Link>
+            <Nav.Link href="/clients">{t("clients")}</Nav.Link>
 
-            {/* Bouton langue unique */}
+            {/* Bouton langue */}
             <button className="language-toggle-btn" onClick={toggleLanguage}>
-              <img src={currentFlag} alt={currentLabel} className="flag-icon" />
+              <img
+                src={currentFlag}
+                alt={currentLabel}
+                className="flag-icon"
+              />
               <span>{currentLabel}</span>
             </button>
 
-            <Button className="contact-btn">
-              {t("contact")}
-            </Button>
+            {/* Bouton Contact → Discord */}
+            <a
+              href="https://discord.com/invite/7dqCetz7Yt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="discord-link-btn"
+            >
+              <Button className="contact-btn">
+                {t("contact")}
+              </Button>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Container>
