@@ -4,6 +4,7 @@
   padding: 14px 0;
   border-bottom: 1px solid rgba(29, 229, 254, 0.12);
   transition: all 0.3s ease;
+  z-index: 9999;
 }
 
 .brand-logo {
@@ -45,68 +46,13 @@
   width: 100%;
 }
 
-.language-switcher {
-  display: flex;
-  gap: 8px;
-  margin-left: 20px;
-}
-
-.language-switcher button {
-  background: transparent;
-  border: 1px solid #1DE5FE;
-  color: #1DE5FE;
-  padding: 6px 12px;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.language-switcher button:hover {
-  background: #1DE5FE;
-  color: black;
-}
-
-.contact-btn {
-  margin-left: 20px;
-  background: linear-gradient(135deg, #1DE5FE, #00bcd4);
-  border: none;
-  color: black;
-  font-weight: bold;
-  padding: 10px 22px;
-  border-radius: 30px;
-  box-shadow: 0 0 18px rgba(29, 229, 254, 0.35);
-  transition: all 0.3s ease;
-}
-
-.contact-btn:hover {
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 0 24px rgba(29, 229, 254, 0.55);
-  color: black;
-}
-
-.navbar-toggler {
+/* Burger */
+.custom-toggler {
   border: none !important;
   box-shadow: none !important;
 }
 
-@media (max-width: 991px) {
-  .nav-links-group {
-    gap: 12px;
-    padding-top: 20px;
-  }
-
-  .language-switcher {
-    margin-left: 0;
-    margin-top: 15px;
-  }
-
-  .contact-btn {
-    margin-left: 0;
-    margin-top: 15px;
-    width: 100%;
-  }
-}
-
+/* Lang button */
 .language-toggle-btn {
   display: flex;
   align-items: center;
@@ -132,4 +78,59 @@
   height: 16px;
   object-fit: cover;
   border-radius: 3px;
+}
+
+/* Contact button */
+.contact-btn {
+  margin-left: 20px;
+  background: linear-gradient(135deg, #1DE5FE, #00bcd4);
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-radius: 30px;
+  box-shadow: 0 0 18px rgba(29, 229, 254, 0.35);
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 0 24px rgba(29, 229, 254, 0.55);
+  color: black;
+}
+
+/* MOBILE MENU */
+@media (max-width: 991px) {
+  .mobile-nav {
+    background: rgba(5,5,5,0.95);
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .nav-links-group {
+    gap: 15px;
+  }
+
+  .language-toggle-btn {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .discord-link-btn {
+    width: 100%;
+  }
+
+  .custom-navbar .nav-link {
+    font-size: 1.1rem;
+    width: 100%;
+  }
 }

@@ -1,42 +1,71 @@
+import { useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 
 import frFlag from "../assets/fr.png";
 import ukFlag from "../assets/uk.png";
 
 function CustomNavbar() {
   const { t, i18n } = useTranslation();
+  const [expanded, setExpanded] = useState(false);
 
   const currentLang = i18n.language;
 
   const toggleLanguage = () => {
-    const newLang = currentLang === "fr" ? "en" : "fr";
-    i18n.changeLanguage(newLang);
+    i18n.changeLanguage(currentLang === "fr" ? "en" : "fr");
   };
 
   const currentFlag = currentLang === "fr" ? frFlag : ukFlag;
   const currentLabel = currentLang === "fr" ? "FR" : "EN";
 
+  const closeMenu = () => setExpanded(false);
+
   return (
-    <Navbar expand="lg" fixed="top" className="custom-navbar">
+    <Navbar
+      expand="lg"
+      fixed="top"
+      expanded={expanded}
+      className="custom-navbar"
+    >
       <Container>
-        <Navbar.Brand href="/" className="brand-logo">
+        <Navbar.Brand as={Link} to="/" className="brand-logo">
           Ryze
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbar-nav">
-          <HiOutlineMenuAlt3 color="#1DE5FE" size={28} />
+        <Navbar.Toggle
+          aria-controls="navbar-nav"
+          onClick={() => setExpanded(!expanded)}
+          className="custom-toggler"
+        >
+          {expanded ? (
+            <HiX color="#1DE5FE" size={30} />
+          ) : (
+            <HiOutlineMenuAlt3 color="#1DE5FE" size={30} />
+          )}
         </Navbar.Toggle>
 
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto align-items-center nav-links-group">
-            <Nav.Link href="/">{t("home")}</Nav.Link>
-            <Nav.Link href="/portfolio">{t("portfolio")}</Nav.Link>
-            <Nav.Link href="/clients">{t("clients")}</Nav.Link>
+          <Nav className="ms-auto align-items-center nav-links-group mobile-nav">
 
-            {/* Bouton langue */}
-            <button className="language-toggle-btn" onClick={toggleLanguage}>
+            <Nav.Link as={Link} to="/" onClick={closeMenu}>
+              {t("home")}
+            </Nav.Link>
+
+            <Nav.Link as={Link} to="/portfolio" onClick={closeMenu}>
+              {t("portfolio")}
+            </Nav.Link>
+
+            <Nav.Link as={Link} to="/clients" onClick={closeMenu}>
+              {t("clients")}
+            </Nav.Link>
+
+            {/* Language */}
+            <button
+              className="language-toggle-btn"
+              onClick={toggleLanguage}
+            >
               <img
                 src={currentFlag}
                 alt={currentLabel}
@@ -45,17 +74,19 @@ function CustomNavbar() {
               <span>{currentLabel}</span>
             </button>
 
-            {/* Bouton Contact → Discord */}
+            {/* Discord */}
             <a
               href="https://discord.com/invite/7dqCetz7Yt"
               target="_blank"
               rel="noopener noreferrer"
               className="discord-link-btn"
+              onClick={closeMenu}
             >
               <Button className="contact-btn">
                 {t("contact")}
               </Button>
             </a>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
