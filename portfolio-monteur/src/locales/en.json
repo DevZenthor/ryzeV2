@@ -3,6 +3,12 @@
   "portfolio": "Portfolio",
   "about": "About",
   "contact": "Contact",
+  "legal": "Legal Notice",
+
   "title": "Video Editor specialized in Highlights",
-  "viewPortfolio": "View Portfolio"
+  "viewPortfolio": "View Portfolio",
+
+  "footerDescription": "Video Editor specialized in Highlights",
+  "developedBy": "Developed by Zenthor",
+  "rights": "© 2025 Ryze — All Rights Reserved"
 }

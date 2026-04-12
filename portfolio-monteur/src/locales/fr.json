@@ -3,6 +3,12 @@
   "portfolio": "Portfolio",
   "about": "À propos",
   "contact": "Contact",
+  "legal": "Mentions légales",
+
   "title": "Monteur Vidéo spécialisé en Highlights",
-  "viewPortfolio": "Voir Portfolio"
+  "viewPortfolio": "Voir Portfolio",
+
+  "footerDescription": "Monteur Vidéo spécialisé en Highlights",
+  "developedBy": "Développé par Zenthor",
+  "rights": "© 2025 Ryze — Tous droits réservés"
 }
