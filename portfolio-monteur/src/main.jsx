@@ -11,6 +11,7 @@ import "./styles/home.css";
 import "./styles/footer.css";
 import "./styles/clients.css";
 import "./styles/portfolio.css";
+import "./styles/legal.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
