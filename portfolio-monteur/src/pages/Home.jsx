@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
 import ryzeVideo from "../assets/ryze.mp4";
 import ryzeImage from "../assets/ryze.jpg";
 
@@ -15,12 +17,14 @@ function Home() {
 
       <div className="home-content text-center">
         <img src={ryzeImage} alt="Ryze" className="profile-image" />
+
         <h1 className="ryze-name">Ryze</h1>
         <p className="ryze-title">{t("title")}</p>
 
-        <a href="/portfolio" className="btn btn-light mt-3">
+        {/* Bouton Portfolio corrigé */}
+        <Link to="/portfolio" className="btn btn-light mt-3">
           {t("viewPortfolio")}
-        </a>
+        </Link>
       </div>
     </div>
   );
