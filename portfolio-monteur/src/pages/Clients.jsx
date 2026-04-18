@@ -9,8 +9,7 @@ import {
 } from "react-bootstrap";
 import { FaXTwitter } from "react-icons/fa6";
 
-/* VIDEO BACKGROUND */
-import ryzeVideo from "../assets/ryze.mp4";
+import Background from "../components/Background";
 
 /* CLIENTS IMAGES */
 import asa1 from "../assets/clients/asa.jpg";
@@ -57,16 +56,14 @@ function Clients() {
 
   return (
     <div className="clients-page">
-      {/* VIDEO BACKGROUND */}
-      <video autoPlay loop muted playsInline className="clients-video-bg">
-        <source src={ryzeVideo} type="video/mp4" />
-      </video>
-
-      <div className="clients-overlay"></div>
+      {/* BACKGROUND GLOBAL */}
+      <Background />
 
       <Container className="clients-content">
         {/* Clients montage */}
-        <h1 className="section-title">{t("clientsEditingTitle")}</h1>
+        <h1 className="section-title">
+          {t("clientsEditingTitle")}
+        </h1>
 
         <Carousel
           indicators

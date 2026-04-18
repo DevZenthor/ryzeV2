@@ -9,7 +9,6 @@ function Home() {
 
   return (
     <div className="home-container">
-      {/* Background global premium */}
       <Background />
 
       <div className="home-content text-center">
@@ -21,7 +20,8 @@ function Home() {
           {t("title")}
         </p>
 
-        <Link to="/portfolio" className="btn btn-light mt-3">
+        {/* Bouton redirige vers Clients */}
+        <Link to="/clients" className="btn btn-light mt-3">
           {t("viewPortfolio")}
         </Link>
       </div>
