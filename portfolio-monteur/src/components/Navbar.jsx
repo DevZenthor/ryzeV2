@@ -30,10 +30,12 @@ function CustomNavbar() {
       className="custom-navbar"
     >
       <Container>
+        {/* LOGO */}
         <Navbar.Brand as={Link} to="/" className="brand-logo">
           Ryze
         </Navbar.Brand>
 
+        {/* BURGER */}
         <Navbar.Toggle
           aria-controls="navbar-nav"
           onClick={() => setExpanded(!expanded)}
@@ -49,19 +51,17 @@ function CustomNavbar() {
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto align-items-center nav-links-group mobile-nav">
 
+            {/* HOME */}
             <Nav.Link as={Link} to="/" onClick={closeMenu}>
               {t("home")}
             </Nav.Link>
 
-            <Nav.Link as={Link} to="/portfolio" onClick={closeMenu}>
-              {t("portfolio")}
+            {/* HIGHLIGHTS */}
+            <Nav.Link as={Link} to="/highlights" onClick={closeMenu}>
+              {t("highlights")}
             </Nav.Link>
 
-            <Nav.Link as={Link} to="/clients" onClick={closeMenu}>
-              {t("clients")}
-            </Nav.Link>
-
-            {/* Language */}
+            {/* LANGUAGE */}
             <button
               className="language-toggle-btn"
               onClick={toggleLanguage}
@@ -74,7 +74,7 @@ function CustomNavbar() {
               <span>{currentLabel}</span>
             </button>
 
-            {/* Discord */}
+            {/* CONTACT */}
             <a
               href="https://discord.com/invite/7dqCetz7Yt"
               target="_blank"

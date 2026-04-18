@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Container } from "react-bootstrap";
-import ryzeVideo from "../assets/ryze.mp4";
+import Background from "../components/Background";
 
 function Legal() {
   const { i18n } = useTranslation();
@@ -9,12 +9,8 @@ function Legal() {
 
   return (
     <div className="legal-page">
-      {/* VIDEO BACKGROUND */}
-      <video autoPlay loop muted playsInline className="legal-video-bg">
-        <source src={ryzeVideo} type="video/mp4" />
-      </video>
-
-      <div className="legal-overlay"></div>
+      {/* BACKGROUND GLOBAL */}
+      <Background />
 
       <Container className="legal-content">
         <h1 className="legal-title">
@@ -44,51 +40,49 @@ function Legal() {
                 <br />
                 États-Unis
               </p>
+
               <p>
-                Des services tiers complémentaires peuvent également être utilisés
-                selon les besoins techniques du site.
+                Des services tiers complémentaires peuvent être utilisés selon les
+                besoins techniques du site.
               </p>
             </section>
 
             <section className="legal-section">
               <h2>3. Propriété intellectuelle</h2>
               <p>
-                Tous les contenus présents sur ce site (vidéos, images, textes,
-                logos, créations graphiques) sont protégés par les lois relatives
-                à la propriété intellectuelle.
+                Tous les contenus présents sur ce site (textes, images, vidéos,
+                identité visuelle, créations graphiques) sont protégés par les
+                lois en vigueur.
               </p>
+
               <p>
-                Toute reproduction, distribution ou utilisation sans autorisation
-                écrite préalable est strictement interdite.
+                Toute reproduction totale ou partielle sans autorisation écrite
+                préalable est interdite.
               </p>
             </section>
 
             <section className="legal-section">
               <h2>4. Responsabilité</h2>
               <p>
-                L’éditeur s’efforce de fournir des informations exactes et mises à
-                jour, mais ne saurait garantir l’exactitude absolue des contenus.
+                Les informations diffusées sont fournies à titre indicatif.
+                L’éditeur ne saurait être tenu responsable d’éventuelles erreurs.
               </p>
             </section>
 
             <section className="legal-section">
               <h2>5. Données personnelles</h2>
               <p>
-                Ce site ne collecte pas de données personnelles sensibles sans
+                Ce site ne collecte aucune donnée personnelle sensible sans
                 consentement explicite.
-              </p>
-              <p>
-                Les éventuels formulaires de contact ou liens externes sont soumis
-                aux politiques de confidentialité des services utilisés.
               </p>
             </section>
 
             <section className="legal-section">
               <h2>6. Contact</h2>
               <p>
-                Pour toute question :
+                Discord officiel :
                 <br />
-                Discord officiel : https://discord.com/invite/7dqCetz7Yt
+                https://discord.com/invite/7dqCetz7Yt
               </p>
             </section>
           </>
@@ -98,7 +92,7 @@ function Legal() {
               <h2>1. Website Publisher</h2>
               <p>
                 This Ryze Portfolio website is published by Ryze, independent
-                video editor specialized in highlight editing.
+                video editor specialized in highlights.
               </p>
             </section>
 
@@ -115,28 +109,30 @@ function Legal() {
                 <br />
                 United States
               </p>
+
               <p>
-                Additional third-party services may also be used depending on
-                technical requirements.
+                Additional technical third-party services may also be used when
+                required.
               </p>
             </section>
 
             <section className="legal-section">
               <h2>3. Intellectual Property</h2>
               <p>
-                All content on this website (videos, images, texts, logos,
-                graphic creations) is protected under intellectual property laws.
+                All content on this website (texts, images, videos, visual
+                identity, graphics) is protected by applicable laws.
               </p>
+
               <p>
-                Any reproduction or unauthorized use is strictly prohibited.
+                Any reproduction without prior written permission is prohibited.
               </p>
             </section>
 
             <section className="legal-section">
               <h2>4. Liability</h2>
               <p>
-                The publisher strives to provide accurate and updated information
-                but cannot guarantee absolute accuracy.
+                Information is provided for guidance only. The publisher cannot
+                guarantee absolute accuracy.
               </p>
             </section>
 
@@ -146,18 +142,14 @@ function Legal() {
                 This website does not collect sensitive personal data without
                 explicit consent.
               </p>
-              <p>
-                Any external forms or links are subject to their own privacy
-                policies.
-              </p>
             </section>
 
             <section className="legal-section">
               <h2>6. Contact</h2>
               <p>
-                For any inquiries:
+                Official Discord:
                 <br />
-                Official Discord: https://discord.com/invite/7dqCetz7Yt
+                https://discord.com/invite/7dqCetz7Yt
               </p>
             </section>
           </>

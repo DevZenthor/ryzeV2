@@ -12,6 +12,7 @@ import "./styles/footer.css";
 import "./styles/clients.css";
 import "./styles/portfolio.css";
 import "./styles/legal.css";
+import "./styles/background.css";
 
 /* Protection légère anti-inspect */
 document.addEventListener("contextmenu", (e) => e.preventDefault());
