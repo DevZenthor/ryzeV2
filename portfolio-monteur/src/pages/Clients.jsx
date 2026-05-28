@@ -25,6 +25,7 @@ import sky from "../assets/clients/sky.jpg";
 import tjino from "../assets/clients/tjino.jpg";
 import vexdylan from "../assets/clients/vexdylan.jpg";
 import zarb from "../assets/clients/zarb.jpg";
+import juu from "../assets/clients/Juu.jpg";
 
 /* MANAGER CLIENTS */
 import asa2 from "../assets/clients/asa.jpg";
@@ -46,7 +47,8 @@ function Clients() {
     { name: "Sky", image: sky, twitter: "https://x.com/SkySZN_" },
     { name: "Tjino", image: tjino, twitter: "https://x.com/Tjino9" },
     { name: "VexDylan", image: vexdylan, twitter: "https://x.com/vexdylan_" },
-    { name: "Zarb", image: zarb, twitter: "https://x.com/zarbehtvv" }
+    { name: "Zarb", image: zarb, twitter: "https://x.com/zarbehtvv" },
+    { name: "Juu", image: juu, twitter: "https://x.com/juufn_?s=21" }
   ];
 
   const managerClients = [
