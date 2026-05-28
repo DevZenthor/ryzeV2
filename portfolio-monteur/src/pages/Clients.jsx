@@ -18,7 +18,6 @@ import hedra from "../assets/clients/hedra.jpg";
 import marco from "../assets/clients/marco.jpg";
 import momsy from "../assets/clients/momsy.jpg";
 import noia from "../assets/clients/noia.png";
-import prodige1 from "../assets/clients/prodige.jpg";
 import seek from "../assets/clients/seek.jpg";
 import scroll from "../assets/clients/scroll.jpg";
 import sky from "../assets/clients/sky.jpg";
@@ -29,7 +28,7 @@ import juu from "../assets/clients/Juu.jpg";
 
 /* MANAGER CLIENTS */
 import asa2 from "../assets/clients/asa.jpg";
-import prodige2 from "../assets/clients/prodige.jpg";
+
 
 function Clients() {
   const { t } = useTranslation();
@@ -42,7 +41,6 @@ function Clients() {
     { name: "Momsy", image: momsy, twitter: "https://x.com/MomsyFN" },
     { name: "Scroll", image: scroll, twitter: "https://x.com/ScrollSZN" },
     { name: "Noia", image: noia, twitter: "https://x.com/noia_gg" },
-    { name: "One Prodige", image: prodige1, twitter: "https://x.com/oneprodige" },
     { name: "Seek", image: seek, twitter: "https://x.com/Seekkfn" },
     { name: "Sky", image: sky, twitter: "https://x.com/SkySZN_" },
     { name: "Tjino", image: tjino, twitter: "https://x.com/Tjino9" },
@@ -53,7 +51,6 @@ function Clients() {
 
   const managerClients = [
     { name: "Asa", image: asa2, twitter: "https://x.com/Asafnr" },
-    { name: "One Prodige", image: prodige2, twitter: "https://x.com/oneprodige" }
   ];
 
   return (
