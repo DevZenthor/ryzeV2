@@ -22,7 +22,6 @@ import seek from "../assets/clients/seek.jpg";
 import scroll from "../assets/clients/scroll.jpg";
 import sky from "../assets/clients/sky.jpg";
 import tjino from "../assets/clients/tjino.jpg";
-import vexdylan from "../assets/clients/vexdylan.jpg";
 import zarb from "../assets/clients/zarb.jpg";
 import juu from "../assets/clients/Juu.jpg";
 
@@ -35,18 +34,17 @@ function Clients() {
 
   const editingClients = [
     { name: "Asa", image: asa1, twitter: "https://x.com/Asafnr" },
-    { name: "Grimz", image: grimz, twitter: "https://x.com/coach_grimz" },
+    { name: "Tjino", image: tjino, twitter: "https://x.com/Tjino9" },
+    { name: "Sky", image: sky, twitter: "https://x.com/SkySZN_" },
+    { name: "Scroll", image: scroll, twitter: "https://x.com/ScrollSZN" },
+    { name: "Juu", image: juu, twitter: "https://x.com/juufn_?s=21" },
+    { name: "Momsy", image: momsy, twitter: "https://x.com/MomsyFN" },
     { name: "Hedra", image: hedra, twitter: "https://x.com/HedraFn" },
     { name: "Marco", image: marco, twitter: "https://x.com/MarcoFNBR" },
-    { name: "Momsy", image: momsy, twitter: "https://x.com/MomsyFN" },
-    { name: "Scroll", image: scroll, twitter: "https://x.com/ScrollSZN" },
+    { name: "Grimz", image: grimz, twitter: "https://x.com/coach_grimz" },
     { name: "Noia", image: noia, twitter: "https://x.com/noia_gg" },
     { name: "Seek", image: seek, twitter: "https://x.com/Seekkfn" },
-    { name: "Sky", image: sky, twitter: "https://x.com/SkySZN_" },
-    { name: "Tjino", image: tjino, twitter: "https://x.com/Tjino9" },
-    { name: "VexDylan", image: vexdylan, twitter: "https://x.com/vexdylan_" },
-    { name: "Zarb", image: zarb, twitter: "https://x.com/zarbehtvv" },
-    { name: "Juu", image: juu, twitter: "https://x.com/juufn_?s=21" }
+    { name: "Zarb", image: zarb, twitter: "https://x.com/zarbehtvv" }
   ];
 
   const managerClients = [
