@@ -24,6 +24,7 @@ import sky from "../assets/clients/sky.jpg";
 import tjino from "../assets/clients/tjino.jpg";
 import zarb from "../assets/clients/zarb.jpg";
 import juu from "../assets/clients/Juu.jpg";
+import lovero from "../assets/clients/Lovero.jpg";
 
 /* MANAGER CLIENTS */
 import asa2 from "../assets/clients/asa.jpg";
@@ -49,6 +50,8 @@ function Clients() {
 
   const managerClients = [
     { name: "Asa", image: asa2, twitter: "https://x.com/Asafnr" },
+    { name: "Lovero", image: lovero, twitter: "https://x.com/Loverofnz" },
+    { name: "Noia", image: noia, twitter: "https://x.com/noia_gg" },
   ];
 
   return (
